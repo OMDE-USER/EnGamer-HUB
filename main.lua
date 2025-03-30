@@ -111,6 +111,13 @@ local Salvatore = ScriptsTab:CreateButton({
    end,
 })
 
+local HorrorSans = ScriptsTab:CreateButton({
+   Name = "Horror Sans",
+   Callback = function()
+      loadstring(game:HttpGet("https://pastebin.com/raw/1WPb0DXa", true))()
+   end,
+})
+
 local settings = Window:CreateTab("Settings", 4483362458) -- Title, Image
 
 local exit = settings:CreateButton({
@@ -119,3 +126,5 @@ local exit = settings:CreateButton({
        Rayfield:Destroy()
    end,
 })
+
+
