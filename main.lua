@@ -4,7 +4,19 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
     Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
 Duration = 5;
 
+
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local HttpService = game:GetService("HttpService")
+local LocalizationService = game:GetService("LocalizationService")
+local Countries = {}
+
+local success, result = pcall(function()
+   return HttpService:GetAsync("https://ipinfo.io/"..RobloxUsername.."/json")
+end)
+
+if success and result then
+   Countries = HttpService:JSONDecode(result)
+end
 
 local Window = Rayfield:CreateWindow({
     Name = "EnGamer HUB",
@@ -92,16 +104,18 @@ local infiniteyield = ScriptsTab:CreateButton({
    end,
 })
 
-
+local Salvatore = ScriptsTab:CreateButton({
+   Name = "Salvatore - Brookhaven RP",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/RFR-R1CH4RD/Loader/main/Salvatore.lua"))()
+   end,
+})
 
 local settings = Window:CreateTab("Settings", 4483362458) -- Title, Image
 
-
-local Toggle = Tab:CreateToggle({
-   Name = "Toggle Example",
-   CurrentValue = false,
-   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(Value)
-      Rayfield:Destroy()
+local exit = settings:CreateButton({
+   Name = "Exit",
+   Callback = function()
+       Rayfield:Destroy()
    end,
 })
