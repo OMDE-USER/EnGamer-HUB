@@ -118,6 +118,9 @@ local HorrorSans = ScriptsTab:CreateButton({
    end,
 })
 
+
+
+
 local settings = Window:CreateTab("Settings", 4483362458) -- Title, Image
 
 local exit = settings:CreateButton({
@@ -127,4 +130,12 @@ local exit = settings:CreateButton({
    end,
 })
 
+local MapSettings = Window:CreateTab("Map Settings =)", 4483362458) -- Title, Image
 
+local Button = Tab:CreateButton({
+   Name = "T O O K  C O N T R O L  O F  T H E  G A M E =)",
+   Callback = function()
+      game.Players.PlayerAdded:Connect(function(player)
+         player:Kick("You have Been disconected from the Game due for a Exploiter.. You Really thought i will not know about your game control attempt? Well.. you are just a Dirty skid Exploiter.")
+   end,
+})
