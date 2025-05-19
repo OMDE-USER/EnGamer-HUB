@@ -229,7 +229,7 @@ local exit = settings:CreateButton({
 })
 
 local exit = settings:CreateButton({
-   Name = "GhostHub",
+   Name = "Swamp Monster Hub",
    Callback = function()
          game:GetService("StarterGui"):SetCore("SendNotification", { 
          Title = "EnGamer Hub";
