@@ -37,7 +37,7 @@ local Window = Rayfield:CreateWindow({
        FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
        SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
        GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-       Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+       Key = {"KEY=123456789"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
     }
  })
 
@@ -93,13 +93,6 @@ local infiniteyield = ScriptsTab:CreateButton({
    end,
 })
 
-local Salvatore = ScriptsTab:CreateButton({
-   Name = "Salvatore - Brookhaven RP",
-   Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/RFR-R1CH4RD/Loader/main/Salvatore.lua"))()
-   end,
-})
-
 local HorrorSans = ScriptsTab:CreateButton({
    Name = "Horror Sans",
    Callback = function()
@@ -116,5 +109,138 @@ local exit = settings:CreateButton({
    Name = "Exit",
    Callback = function()
        Rayfield:Destroy()
+   end,
+})
+
+local exit = settings:CreateButton({
+   Name = "Change Theme",
+   Callback = function()
+       Rayfield:Destroy()
+   end,
+})
+
+local settings = Window:CreateTab("OP Scripts", 4483362458)
+
+local IY = settings:CreateButton({
+   Name = "Infinite Yield",
+   Callback = function()
+       game:GetService("StarterGui"):SetCore("SendNotification", { 
+         Title = "EnGamer Hub";
+         Text = "Loading Infinite Yield...";
+         Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+         Duration = 5;
+
+         Rayfield:Notify({
+            Title = "EnGamer Hub",
+            Content = "Loading Infinite Yield...",
+            Duration = 6.5,
+            Image = 4483362458,
+         })
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+       game:GetService("StarterGui"):SetCore("SendNotification", { 
+         Title = "EnGamer Hub";
+         Text = "Infinite Yield has been Sucessfully Loaded.";
+         Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+         Duration = 5;
+         Rayfield:Notify({
+            Title = "EnGamer Hub",
+            Content = "Infinite Yield has been Sucessfully Loaded.",
+            Duration = 6.5,
+            Image = 4483362458,
+         })
+   end,
+})
+
+local Starlight = settings:CreateButton({
+   Name = "Starlight",
+   Callback = function()
+       game:GetService("StarterGui"):SetCore("SendNotification", { 
+         Title = "EnGamer Hub";
+         Text = "Loading Starlight..";
+         Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+         Duration = 5;
+         Rayfield:Notify({
+            Title = "EnGamer Hub",
+            Content = "Loading Starlight...",
+            Duration = 6.5,
+            Image = 4483362458,
+         })
+       loadstring(game:HttpGetAsync("https://starlightrbx.netlify.app/"))()
+         Rayfield:Notify({
+            Title = "EnGamer Hub",
+            Content = "Starlight has been Sucessfully Loaded.",
+            Duration = 6.5,
+            Image = 4483362458,
+         })
+              game:GetService("StarterGui"):SetCore("SendNotification", { 
+               Title = " EnGamer Hub";
+               Text = "Starlight has been Sucessfully Loaded.";
+               Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+               Duration = 5;
+
+   end,
+})
+
+local Dex = settings:CreateButton({
+   Name = "Dex",
+   Callback = function()
+         Rayfield:Notify({
+            Title = "EnGamer Hub",
+            Content = "Loading Dex...",
+            Duration = 6.5,
+            Image = 4483362458,
+         })
+         game:GetService("StarterGui"):SetCore("SendNotification", { 
+         Title = "EnGamer Hub";
+         Text = "Loading Dex...";
+         Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+         Duration = 5;
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+         Rayfield:Notify({
+            Title = "EnGamer Hub",
+            Content = "Dex loaded!",
+            Duration = 6.5,
+            Image = 4483362458,
+         })
+         game:GetService("StarterGui"):SetCore("SendNotification", { 
+         Title = "EnGamer Hub";
+         Text = "Dex Loaded!";
+         Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+         Duration = 5;
+   end,
+})
+
+local exit = settings:CreateButton({
+   Name = "GhostHub",
+   Callback = function()
+         game:GetService("StarterGui"):SetCore("SendNotification", { 
+         Title = "EnGamer Hub";
+         Text = "Loading Ghosthub...";
+         Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+         Duration = 5;
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+         game:GetService("StarterGui"):SetCore("SendNotification", { 
+         Title = "EnGamer Hub";
+         Text = "GhostHub Loaded!";
+         Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+         Duration = 5;
+         loadstring(game:HttpGet("https://pastefy.app/2tC7nRAK/raw"))()
+   end,
+})
+
+local exit = settings:CreateButton({
+   Name = "GhostHub",
+   Callback = function()
+         game:GetService("StarterGui"):SetCore("SendNotification", { 
+         Title = "EnGamer Hub";
+         Text = "Loading Ghosthub...";
+         Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+         Duration = 5;
+       loadstring(game:HttpGet("https://pastefy.app/2tC7nRAK/raw"))()
+         game:GetService("StarterGui"):SetCore("SendNotification", { 
+         Title = "EnGamer Hub";
+         Text = "GhostHub Loaded!";
+         Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+         Duration = 5;
    end,
 })
