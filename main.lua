@@ -244,3 +244,83 @@ local exit = settings:CreateButton({
          Duration = 5;
    end,
 })
+local exit = settings:CreateButton({
+   Name = "Swamp Monster Hub",
+   Callback = function()
+         game:GetService("StarterGui"):SetCore("SendNotification", { 
+         Title = "EnGamer Hub";
+         Text = "Loading Swamp Monster Hub";
+         Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+         Duration = 5;
+       loadstring(game:HttpGet('https://pastebin.com/5WqKMe3G'))()
+         game:GetService("StarterGui"):SetCore("SendNotification", { 
+         Title = "EnGamer Hub";
+         Text = "Swamp Monster Hub";
+         Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+         Duration = 5;
+   end,
+})
+local settings = Window:CreateTab("SS Scripts", 4483362458)
+local Backdoorexev6X = settings:CreateButton({
+   Name = "Backdoor.exe v6X",
+   Callback = function()
+         game:GetService("StarterGui"):SetCore("SendNotification", { 
+         Title = "EnGamer Hub";
+         Text = "Loading Backdoor.exe v6X...";
+         Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+         Duration = 5;
+       loadstring(game:HttpGet('https://pastebin.com/raw/5WqKMe3G'))()
+         game:GetService("StarterGui"):SetCore("SendNotification", { 
+         Title = "EnGamer Hub";
+         Text = "Backdoor.exe v6X Loaded!";
+         Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+         Duration = 5;
+   end,
+})
+
+local Backdoorexev6X = settings:CreateButton({
+   Name = "Backdoor.exe v6X",
+   Callback = function()
+         game:GetService("StarterGui"):SetCore("SendNotification", { 
+         Title = "EnGamer Hub";
+         Text = "Loading Backdoor.exe v6X...";
+         Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+         Duration = 5;
+       loadstring(game:HttpGet('https://pastebin.com/5WqKMe3G'))()
+         game:GetService("StarterGui"):SetCore("SendNotification", { 
+         Title = "EnGamer Hub";
+         Text = "Backdoor.exe v6X Loaded!";
+         Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+         Duration = 5;
+   end,
+})
+
+local Starlight = settings:CreateButton({
+   Name = "Starlight",
+   Callback = function()
+       game:GetService("StarterGui"):SetCore("SendNotification", { 
+         Title = "EnGamer Hub";
+         Text = "Loading Starlight..";
+         Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+         Duration = 5;
+         Rayfield:Notify({
+            Title = "EnGamer Hub",
+            Content = "Loading Starlight...",
+            Duration = 6.5,
+            Image = 4483362458,
+         })
+       loadstring(game:HttpGetAsync("https://starlightrbx.netlify.app/"))()
+         Rayfield:Notify({
+            Title = "EnGamer Hub",
+            Content = "Starlight has been Sucessfully Loaded.",
+            Duration = 6.5,
+            Image = 4483362458,
+         })
+              game:GetService("StarterGui"):SetCore("SendNotification", { 
+               Title = " EnGamer Hub";
+               Text = "Starlight has been Sucessfully Loaded.";
+               Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+               Duration = 5;
+
+   end,
+})
